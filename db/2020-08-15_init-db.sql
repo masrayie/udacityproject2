@@ -15,3 +15,5 @@ CREATE TABLE location (
 );
 CREATE INDEX coordinate_idx ON location (coordinate);
 CREATE INDEX creation_time_idx ON location (creation_time);
+
+TRUNCATE TABLE person, location;
