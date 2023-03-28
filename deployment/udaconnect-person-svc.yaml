@@ -32,7 +32,7 @@ spec:
         app: udaconnect-person-svc
     spec:
       containers:
-      - image: masrayie/udaconnect-person-svc:latest
+      - image: masrayie/udaconnect-person-svc:v.2.0
         name: udaconnect-person-svc
         imagePullPolicy: Always
         env:
