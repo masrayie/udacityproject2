@@ -1,0 +1,7 @@
+helm install udaconnect-kafka bitnami/kafka
+
+# Create topic
+kubectl exec -it udaconnect-kafka-0 -- kafka-topics.sh \
+    --create --bootstrap-server udaconnect-kafka-headless:9092 \
+    --replication-factor 1 --partitions 1 \
+    --topic location-data
