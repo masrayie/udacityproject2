@@ -31,7 +31,7 @@ spec:
         app: udaconnect-location-svc
     spec:
       containers:
-      - image: masrayie/udaconnect-location-svc:latest
+      - image: masrayie/udaconnect-location-svc:v.2.0
         name: udaconnect-location-svc
         imagePullPolicy: Always
         env:

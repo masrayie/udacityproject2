@@ -33,7 +33,7 @@ spec:
         app: udaconnect-connection-svc
     spec:
       containers:
-      - image: masrayie/udaconnect-connection-svc:latest
+      - image: masrayie/udaconnect-connection-svc:v.2.0
         name: udaconnect-connection-svc
         imagePullPolicy: Always
         env:

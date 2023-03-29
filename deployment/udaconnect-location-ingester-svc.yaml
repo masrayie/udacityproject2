@@ -32,7 +32,7 @@ spec:
         app: udaconnect-location-ingester-svc
     spec:
       containers:
-      - image: masrayie/udaconnect-location-ingester-svc:latest
+      - image: masrayie/udaconnect-location-ingester-svc:v.2.0
         name: udaconnect-location-ingester-svc
         imagePullPolicy: Always
         env:
