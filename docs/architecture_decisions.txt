@@ -1,0 +1,3 @@
+Justification:
+Message Passing type that used in this project are REST API, Kafka Queuing & gRPC.
+Distribution of User Location Data will be handled by gRPC with good efficiency that providing user coordinates directly from their mobile devices concurrently. Kafka as Location Ingester Service will be asynchronously feed the data to database so user will have no need to wait until data completely saved in the database. REST API will handle message passing between frontend and the backend services as universal messages passer that could be consumed by many device type & programming language with easy integration.
