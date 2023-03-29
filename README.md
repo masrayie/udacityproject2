@@ -98,7 +98,7 @@ $ helm repo add bitnami https://charts.bitnami.com/bitnami
 $ helm install udaconnect-kafka bitnami/kafka  --kubeconfig /etc/rancher/k3s/k3s.yaml
 ```
 
-#### Create topic
+#### Create Kafka Topic
 ```bash
 $ kubectl exec -it udaconnect-kafka-0 -- kafka-topics.sh \
     --create --bootstrap-server udaconnect-kafka-headless:9092 \
