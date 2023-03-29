@@ -88,12 +88,15 @@ Afterwards, you can test that `kubectl` works by running a command like `kubectl
 10. `sh scripts/run_db_command.sh <POD_NAME>` - Seed your database against the `postgres` pod. (`kubectl get pods` will give you the `POD_NAME`)
 
 ### Kafka Setup
+#### Verify Bitnami/Kafka Repo in local Helm
 ```bash
 $ helm repo list
 ```
+#### Add Bitnami/Kafka Repo in local Helm
 ```bash
 $ helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
+#### Install Kafka in local Helm
 ```bash
 $ helm install udaconnect-kafka bitnami/kafka  --kubeconfig /etc/rancher/k3s/k3s.yaml
 ```
